@@ -1,0 +1,946 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C935CA6EBE316FE8D07D83C /* Pods_HackGT2020.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BDA0EA2A3F3A89D9751EE1 /* Pods_HackGT2020.framework */; };
+		5AAFCFA4253AF878009042FA /* HackGT2020App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFCFA3253AF878009042FA /* HackGT2020App.swift */; };
+		5AAFCFA6253AF878009042FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFCFA5253AF878009042FA /* ContentView.swift */; };
+		5AAFCFA8253AF879009042FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AAFCFA7253AF879009042FA /* Assets.xcassets */; };
+		5AAFCFAB253AF879009042FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AAFCFAA253AF879009042FA /* Preview Assets.xcassets */; };
+		5AAFCFB6253AF879009042FA /* HackGT2020Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFCFB5253AF879009042FA /* HackGT2020Tests.swift */; };
+		5AAFCFC1253AF879009042FA /* HackGT2020UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFCFC0253AF879009042FA /* HackGT2020UITests.swift */; };
+		5AAFCFED253B017E009042FA /* keys.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AAFCFEC253B017E009042FA /* keys.json */; };
+		5AAFCFFB253B02D6009042FA /* GoogleMapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFCFFA253B02D6009042FA /* GoogleMapsView.swift */; };
+		5AAFD009253B03E2009042FA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD008253B03E2009042FA /* MapView.swift */; };
+		5AAFD017253B0B56009042FA /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD016253B0B56009042FA /* ExploreView.swift */; };
+		5AAFD01C253B13ED009042FA /* ExploreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD01B253B13ED009042FA /* ExploreViewCell.swift */; };
+		5AAFD022253B1743009042FA /* DonateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD021253B1743009042FA /* DonateView.swift */; };
+		5AAFD027253B176C009042FA /* DonationPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD026253B176C009042FA /* DonationPageView.swift */; };
+		5AAFD02C253B177A009042FA /* DonateViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD02B253B177A009042FA /* DonateViewCell.swift */; };
+		5AAFD032253B5D02009042FA /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD031253B5D02009042FA /* DataModel.swift */; };
+		5AAFD04C253B6D74009042FA /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD04B253B6D74009042FA /* Facility.swift */; };
+		5AAFD051253B891B009042FA /* RelativeFacility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD050253B891B009042FA /* RelativeFacility.swift */; };
+		5AAFD05C253BC8D2009042FA /* Microfund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD05B253BC8D2009042FA /* Microfund.swift */; };
+		5AAFD069253BD415009042FA /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD068253BD415009042FA /* CustomProgressView.swift */; };
+		5AAFD083253BE848009042FA /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD082253BE847009042FA /* Restaurant.swift */; };
+		5AAFD088253C2439009042FA /* RelativeRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD087253C2439009042FA /* RelativeRestaurant.swift */; };
+		5AAFD08E253C3188009042FA /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 5AAFD08D253C3188009042FA /* CodeScanner */; };
+		5AAFD094253C3241009042FA /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD093253C3241009042FA /* ScanView.swift */; };
+		5AAFD099253C3C57009042FA /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD098253C3C57009042FA /* UserDataModel.swift */; };
+		5AAFD09E253C568A009042FA /* CustomCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD09D253C568A009042FA /* CustomCircularProgressView.swift */; };
+		7F7195F36F636F81980B8665 /* Pods_HackGT2020_HackGT2020UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7F2A7FA3BDF3FAA167163B /* Pods_HackGT2020_HackGT2020UITests.framework */; };
+		CFF8733697FD5DAAACC8E2BA /* Pods_HackGT2020Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C07C05179CB6469435E09F9 /* Pods_HackGT2020Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AAFCFB2253AF879009042FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AAFCF98253AF877009042FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AAFCF9F253AF877009042FA;
+			remoteInfo = HackGT2020;
+		};
+		5AAFCFBD253AF879009042FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AAFCF98253AF877009042FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AAFCF9F253AF877009042FA;
+			remoteInfo = HackGT2020;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1674D0C2CCF0D77F1DACDF4C /* Pods-HackGT2020Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackGT2020Tests.release.xcconfig"; path = "Target Support Files/Pods-HackGT2020Tests/Pods-HackGT2020Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2028323B5D173961344FF591 /* Pods-HackGT2020.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackGT2020.release.xcconfig"; path = "Target Support Files/Pods-HackGT2020/Pods-HackGT2020.release.xcconfig"; sourceTree = "<group>"; };
+		2208A514DA6BF0634C02B678 /* Pods-HackGT2020.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackGT2020.debug.xcconfig"; path = "Target Support Files/Pods-HackGT2020/Pods-HackGT2020.debug.xcconfig"; sourceTree = "<group>"; };
+		4A7F2A7FA3BDF3FAA167163B /* Pods_HackGT2020_HackGT2020UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackGT2020_HackGT2020UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BB168DFAA274DE89E178B5 /* Pods-HackGT2020Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackGT2020Tests.debug.xcconfig"; path = "Target Support Files/Pods-HackGT2020Tests/Pods-HackGT2020Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AAFCFA0253AF878009042FA /* HackGT2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackGT2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AAFCFA3253AF878009042FA /* HackGT2020App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackGT2020App.swift; sourceTree = "<group>"; };
+		5AAFCFA5253AF878009042FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5AAFCFA7253AF879009042FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AAFCFAA253AF879009042FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5AAFCFAC253AF879009042FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AAFCFB1253AF879009042FA /* HackGT2020Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackGT2020Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AAFCFB5253AF879009042FA /* HackGT2020Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackGT2020Tests.swift; sourceTree = "<group>"; };
+		5AAFCFB7253AF879009042FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AAFCFBC253AF879009042FA /* HackGT2020UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackGT2020UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AAFCFC0253AF879009042FA /* HackGT2020UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackGT2020UITests.swift; sourceTree = "<group>"; };
+		5AAFCFC2253AF879009042FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AAFCFEC253B017E009042FA /* keys.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = keys.json; sourceTree = "<group>"; };
+		5AAFCFFA253B02D6009042FA /* GoogleMapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsView.swift; sourceTree = "<group>"; };
+		5AAFD008253B03E2009042FA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5AAFD016253B0B56009042FA /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		5AAFD01B253B13ED009042FA /* ExploreViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewCell.swift; sourceTree = "<group>"; };
+		5AAFD021253B1743009042FA /* DonateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateView.swift; sourceTree = "<group>"; };
+		5AAFD026253B176C009042FA /* DonationPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPageView.swift; sourceTree = "<group>"; };
+		5AAFD02B253B177A009042FA /* DonateViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewCell.swift; sourceTree = "<group>"; };
+		5AAFD031253B5D02009042FA /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		5AAFD04B253B6D74009042FA /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
+		5AAFD050253B891B009042FA /* RelativeFacility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelativeFacility.swift; sourceTree = "<group>"; };
+		5AAFD05B253BC8D2009042FA /* Microfund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Microfund.swift; sourceTree = "<group>"; };
+		5AAFD068253BD415009042FA /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		5AAFD082253BE847009042FA /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		5AAFD087253C2439009042FA /* RelativeRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelativeRestaurant.swift; sourceTree = "<group>"; };
+		5AAFD093253C3241009042FA /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		5AAFD098253C3C57009042FA /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		5AAFD09D253C568A009042FA /* CustomCircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircularProgressView.swift; sourceTree = "<group>"; };
+		7C07C05179CB6469435E09F9 /* Pods_HackGT2020Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackGT2020Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E0C56A4CBC56BD1E26736F /* Pods-HackGT2020-HackGT2020UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackGT2020-HackGT2020UITests.debug.xcconfig"; path = "Target Support Files/Pods-HackGT2020-HackGT2020UITests/Pods-HackGT2020-HackGT2020UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F727E6D2ABAD8CC2E2A7491C /* Pods-HackGT2020-HackGT2020UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackGT2020-HackGT2020UITests.release.xcconfig"; path = "Target Support Files/Pods-HackGT2020-HackGT2020UITests/Pods-HackGT2020-HackGT2020UITests.release.xcconfig"; sourceTree = "<group>"; };
+		F8BDA0EA2A3F3A89D9751EE1 /* Pods_HackGT2020.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackGT2020.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AAFCF9D253AF877009042FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AAFD08E253C3188009042FA /* CodeScanner in Frameworks */,
+				1C935CA6EBE316FE8D07D83C /* Pods_HackGT2020.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AAFCFAE253AF879009042FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF8733697FD5DAAACC8E2BA /* Pods_HackGT2020Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AAFCFB9253AF879009042FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F7195F36F636F81980B8665 /* Pods_HackGT2020_HackGT2020UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AAFCF97253AF877009042FA = {
+			isa = PBXGroup;
+			children = (
+				5AAFCFEC253B017E009042FA /* keys.json */,
+				5AAFCFA2253AF878009042FA /* HackGT2020 */,
+				5AAFCFB4253AF879009042FA /* HackGT2020Tests */,
+				5AAFCFBF253AF879009042FA /* HackGT2020UITests */,
+				5AAFCFA1253AF878009042FA /* Products */,
+				F8A5AAC17A8F65D5642831FC /* Pods */,
+				ACF7241E21FA9CCCD9630B5E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5AAFCFA1253AF878009042FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AAFCFA0253AF878009042FA /* HackGT2020.app */,
+				5AAFCFB1253AF879009042FA /* HackGT2020Tests.xctest */,
+				5AAFCFBC253AF879009042FA /* HackGT2020UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AAFCFA2253AF878009042FA /* HackGT2020 */ = {
+			isa = PBXGroup;
+			children = (
+				5AAFCFA3253AF878009042FA /* HackGT2020App.swift */,
+				5AAFCFA5253AF878009042FA /* ContentView.swift */,
+				5AAFD030253B5CF3009042FA /* Models */,
+				5AAFD020253B16ED009042FA /* ReusableViews */,
+				5AAFD003253B0385009042FA /* Tabs */,
+				5AAFCFF9253B02B9009042FA /* UIViewRepresentables */,
+				5AAFCFA7253AF879009042FA /* Assets.xcassets */,
+				5AAFCFAC253AF879009042FA /* Info.plist */,
+				5AAFCFA9253AF879009042FA /* Preview Content */,
+			);
+			path = HackGT2020;
+			sourceTree = "<group>";
+		};
+		5AAFCFA9253AF879009042FA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5AAFCFAA253AF879009042FA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5AAFCFB4253AF879009042FA /* HackGT2020Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5AAFCFB5253AF879009042FA /* HackGT2020Tests.swift */,
+				5AAFCFB7253AF879009042FA /* Info.plist */,
+			);
+			path = HackGT2020Tests;
+			sourceTree = "<group>";
+		};
+		5AAFCFBF253AF879009042FA /* HackGT2020UITests */ = {
+			isa = PBXGroup;
+			children = (
+				5AAFCFC0253AF879009042FA /* HackGT2020UITests.swift */,
+				5AAFCFC2253AF879009042FA /* Info.plist */,
+			);
+			path = HackGT2020UITests;
+			sourceTree = "<group>";
+		};
+		5AAFCFF9253B02B9009042FA /* UIViewRepresentables */ = {
+			isa = PBXGroup;
+			children = (
+				5AAFCFFA253B02D6009042FA /* GoogleMapsView.swift */,
+			);
+			path = UIViewRepresentables;
+			sourceTree = "<group>";
+		};
+		5AAFD003253B0385009042FA /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				5AAFD092253C3232009042FA /* ScanTab */,
+				5AAFD007253B03A0009042FA /* ProfileTab */,
+				5AAFD006253B039A009042FA /* DonateTab */,
+				5AAFD005253B0391009042FA /* ExploreTab */,
+				5AAFD004253B038A009042FA /* MapTab */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		5AAFD004253B038A009042FA /* MapTab */ = {
+			isa = PBXGroup;
+			children = (
+				5AAFD008253B03E2009042FA /* MapView.swift */,
+			);
+			path = MapTab;
+			sourceTree = "<group>";
+		};
+		5AAFD005253B0391009042FA /* ExploreTab */ = {
+			isa = PBXGroup;
+			children = (
+				5AAFD016253B0B56009042FA /* ExploreView.swift */,
+				5AAFD01B253B13ED009042FA /* ExploreViewCell.swift */,
+			);
+			path = ExploreTab;
+			sourceTree = "<group>";
+		};
+		5AAFD006253B039A009042FA /* DonateTab */ = {
+			isa = PBXGroup;
+			children = (
+				5AAFD021253B1743009042FA /* DonateView.swift */,
+				5AAFD02B253B177A009042FA /* DonateViewCell.swift */,
+				5AAFD026253B176C009042FA /* DonationPageView.swift */,
+				5AAFD09D253C568A009042FA /* CustomCircularProgressView.swift */,
+				5AAFD068253BD415009042FA /* CustomProgressView.swift */,
+			);
+			path = DonateTab;
+			sourceTree = "<group>";
+		};
+		5AAFD007253B03A0009042FA /* ProfileTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProfileTab;
+			sourceTree = "<group>";
+		};
+		5AAFD020253B16ED009042FA /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		5AAFD030253B5CF3009042FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5AAFD031253B5D02009042FA /* DataModel.swift */,
+				5AAFD098253C3C57009042FA /* UserDataModel.swift */,
+				5AAFD04B253B6D74009042FA /* Facility.swift */,
+				5AAFD050253B891B009042FA /* RelativeFacility.swift */,
+				5AAFD05B253BC8D2009042FA /* Microfund.swift */,
+				5AAFD082253BE847009042FA /* Restaurant.swift */,
+				5AAFD087253C2439009042FA /* RelativeRestaurant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5AAFD092253C3232009042FA /* ScanTab */ = {
+			isa = PBXGroup;
+			children = (
+				5AAFD093253C3241009042FA /* ScanView.swift */,
+			);
+			path = ScanTab;
+			sourceTree = "<group>";
+		};
+		ACF7241E21FA9CCCD9630B5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8BDA0EA2A3F3A89D9751EE1 /* Pods_HackGT2020.framework */,
+				4A7F2A7FA3BDF3FAA167163B /* Pods_HackGT2020_HackGT2020UITests.framework */,
+				7C07C05179CB6469435E09F9 /* Pods_HackGT2020Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8A5AAC17A8F65D5642831FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2208A514DA6BF0634C02B678 /* Pods-HackGT2020.debug.xcconfig */,
+				2028323B5D173961344FF591 /* Pods-HackGT2020.release.xcconfig */,
+				B1E0C56A4CBC56BD1E26736F /* Pods-HackGT2020-HackGT2020UITests.debug.xcconfig */,
+				F727E6D2ABAD8CC2E2A7491C /* Pods-HackGT2020-HackGT2020UITests.release.xcconfig */,
+				54BB168DFAA274DE89E178B5 /* Pods-HackGT2020Tests.debug.xcconfig */,
+				1674D0C2CCF0D77F1DACDF4C /* Pods-HackGT2020Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AAFCF9F253AF877009042FA /* HackGT2020 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AAFCFC5253AF879009042FA /* Build configuration list for PBXNativeTarget "HackGT2020" */;
+			buildPhases = (
+				9ECD249F4BFE9772156400AB /* [CP] Check Pods Manifest.lock */,
+				5AAFCF9C253AF877009042FA /* Sources */,
+				5AAFCF9D253AF877009042FA /* Frameworks */,
+				5AAFCF9E253AF877009042FA /* Resources */,
+				8EE03C2C2B440B024772FBDD /* [CP] Copy Pods Resources */,
+				59560EE6EC417BE01914D463 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackGT2020;
+			packageProductDependencies = (
+				5AAFD08D253C3188009042FA /* CodeScanner */,
+			);
+			productName = HackGT2020;
+			productReference = 5AAFCFA0253AF878009042FA /* HackGT2020.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AAFCFB0253AF879009042FA /* HackGT2020Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AAFCFC8253AF879009042FA /* Build configuration list for PBXNativeTarget "HackGT2020Tests" */;
+			buildPhases = (
+				CA51EC7B18AED1E8063E256D /* [CP] Check Pods Manifest.lock */,
+				5AAFCFAD253AF879009042FA /* Sources */,
+				5AAFCFAE253AF879009042FA /* Frameworks */,
+				5AAFCFAF253AF879009042FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AAFCFB3253AF879009042FA /* PBXTargetDependency */,
+			);
+			name = HackGT2020Tests;
+			productName = HackGT2020Tests;
+			productReference = 5AAFCFB1253AF879009042FA /* HackGT2020Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5AAFCFBB253AF879009042FA /* HackGT2020UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AAFCFCB253AF879009042FA /* Build configuration list for PBXNativeTarget "HackGT2020UITests" */;
+			buildPhases = (
+				38C31FEABD1F4A89E681F325 /* [CP] Check Pods Manifest.lock */,
+				5AAFCFB8253AF879009042FA /* Sources */,
+				5AAFCFB9253AF879009042FA /* Frameworks */,
+				5AAFCFBA253AF879009042FA /* Resources */,
+				D93B6825E222D63188544DD0 /* [CP] Copy Pods Resources */,
+				871CA3B0E4C6940817DA8673 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AAFCFBE253AF879009042FA /* PBXTargetDependency */,
+			);
+			name = HackGT2020UITests;
+			productName = HackGT2020UITests;
+			productReference = 5AAFCFBC253AF879009042FA /* HackGT2020UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AAFCF98253AF877009042FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					5AAFCF9F253AF877009042FA = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					5AAFCFB0253AF879009042FA = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 5AAFCF9F253AF877009042FA;
+					};
+					5AAFCFBB253AF879009042FA = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 5AAFCF9F253AF877009042FA;
+					};
+				};
+			};
+			buildConfigurationList = 5AAFCF9B253AF877009042FA /* Build configuration list for PBXProject "HackGT2020" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AAFCF97253AF877009042FA;
+			packageReferences = (
+				5AAFD08C253C3188009042FA /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
+			productRefGroup = 5AAFCFA1253AF878009042FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AAFCF9F253AF877009042FA /* HackGT2020 */,
+				5AAFCFB0253AF879009042FA /* HackGT2020Tests */,
+				5AAFCFBB253AF879009042FA /* HackGT2020UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AAFCF9E253AF877009042FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AAFCFED253B017E009042FA /* keys.json in Resources */,
+				5AAFCFAB253AF879009042FA /* Preview Assets.xcassets in Resources */,
+				5AAFCFA8253AF879009042FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AAFCFAF253AF879009042FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AAFCFBA253AF879009042FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38C31FEABD1F4A89E681F325 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackGT2020-HackGT2020UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59560EE6EC417BE01914D463 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HackGT2020/Pods-HackGT2020-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HackGT2020/Pods-HackGT2020-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HackGT2020/Pods-HackGT2020-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		871CA3B0E4C6940817DA8673 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HackGT2020-HackGT2020UITests/Pods-HackGT2020-HackGT2020UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HackGT2020-HackGT2020UITests/Pods-HackGT2020-HackGT2020UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HackGT2020-HackGT2020UITests/Pods-HackGT2020-HackGT2020UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EE03C2C2B440B024772FBDD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HackGT2020/Pods-HackGT2020-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HackGT2020/Pods-HackGT2020-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HackGT2020/Pods-HackGT2020-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ECD249F4BFE9772156400AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackGT2020-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA51EC7B18AED1E8063E256D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackGT2020Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D93B6825E222D63188544DD0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HackGT2020-HackGT2020UITests/Pods-HackGT2020-HackGT2020UITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HackGT2020-HackGT2020UITests/Pods-HackGT2020-HackGT2020UITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HackGT2020-HackGT2020UITests/Pods-HackGT2020-HackGT2020UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AAFCF9C253AF877009042FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AAFCFFB253B02D6009042FA /* GoogleMapsView.swift in Sources */,
+				5AAFD009253B03E2009042FA /* MapView.swift in Sources */,
+				5AAFD04C253B6D74009042FA /* Facility.swift in Sources */,
+				5AAFD02C253B177A009042FA /* DonateViewCell.swift in Sources */,
+				5AAFD09E253C568A009042FA /* CustomCircularProgressView.swift in Sources */,
+				5AAFD022253B1743009042FA /* DonateView.swift in Sources */,
+				5AAFD083253BE848009042FA /* Restaurant.swift in Sources */,
+				5AAFD099253C3C57009042FA /* UserDataModel.swift in Sources */,
+				5AAFCFA6253AF878009042FA /* ContentView.swift in Sources */,
+				5AAFD069253BD415009042FA /* CustomProgressView.swift in Sources */,
+				5AAFD088253C2439009042FA /* RelativeRestaurant.swift in Sources */,
+				5AAFD032253B5D02009042FA /* DataModel.swift in Sources */,
+				5AAFCFA4253AF878009042FA /* HackGT2020App.swift in Sources */,
+				5AAFD027253B176C009042FA /* DonationPageView.swift in Sources */,
+				5AAFD05C253BC8D2009042FA /* Microfund.swift in Sources */,
+				5AAFD01C253B13ED009042FA /* ExploreViewCell.swift in Sources */,
+				5AAFD051253B891B009042FA /* RelativeFacility.swift in Sources */,
+				5AAFD094253C3241009042FA /* ScanView.swift in Sources */,
+				5AAFD017253B0B56009042FA /* ExploreView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AAFCFAD253AF879009042FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AAFCFB6253AF879009042FA /* HackGT2020Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AAFCFB8253AF879009042FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AAFCFC1253AF879009042FA /* HackGT2020UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AAFCFB3253AF879009042FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AAFCF9F253AF877009042FA /* HackGT2020 */;
+			targetProxy = 5AAFCFB2253AF879009042FA /* PBXContainerItemProxy */;
+		};
+		5AAFCFBE253AF879009042FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AAFCF9F253AF877009042FA /* HackGT2020 */;
+			targetProxy = 5AAFCFBD253AF879009042FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5AAFCFC3253AF879009042FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5AAFCFC4253AF879009042FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AAFCFC6253AF879009042FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2208A514DA6BF0634C02B678 /* Pods-HackGT2020.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HackGT2020/Preview Content\"";
+				DEVELOPMENT_TEAM = H9E6SLMQ79;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HackGT2020/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = self.Invyte.HackGT2020;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AAFCFC7253AF879009042FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2028323B5D173961344FF591 /* Pods-HackGT2020.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HackGT2020/Preview Content\"";
+				DEVELOPMENT_TEAM = H9E6SLMQ79;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HackGT2020/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = self.Invyte.HackGT2020;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5AAFCFC9253AF879009042FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54BB168DFAA274DE89E178B5 /* Pods-HackGT2020Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XC5483PFF;
+				INFOPLIST_FILE = HackGT2020Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = self.RahilPatel.HackGT2020Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackGT2020.app/HackGT2020";
+			};
+			name = Debug;
+		};
+		5AAFCFCA253AF879009042FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1674D0C2CCF0D77F1DACDF4C /* Pods-HackGT2020Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XC5483PFF;
+				INFOPLIST_FILE = HackGT2020Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = self.RahilPatel.HackGT2020Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackGT2020.app/HackGT2020";
+			};
+			name = Release;
+		};
+		5AAFCFCC253AF879009042FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E0C56A4CBC56BD1E26736F /* Pods-HackGT2020-HackGT2020UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XC5483PFF;
+				INFOPLIST_FILE = HackGT2020UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = self.RahilPatel.HackGT2020UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HackGT2020;
+			};
+			name = Debug;
+		};
+		5AAFCFCD253AF879009042FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F727E6D2ABAD8CC2E2A7491C /* Pods-HackGT2020-HackGT2020UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XC5483PFF;
+				INFOPLIST_FILE = HackGT2020UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = self.RahilPatel.HackGT2020UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HackGT2020;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AAFCF9B253AF877009042FA /* Build configuration list for PBXProject "HackGT2020" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AAFCFC3253AF879009042FA /* Debug */,
+				5AAFCFC4253AF879009042FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AAFCFC5253AF879009042FA /* Build configuration list for PBXNativeTarget "HackGT2020" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AAFCFC6253AF879009042FA /* Debug */,
+				5AAFCFC7253AF879009042FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AAFCFC8253AF879009042FA /* Build configuration list for PBXNativeTarget "HackGT2020Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AAFCFC9253AF879009042FA /* Debug */,
+				5AAFCFCA253AF879009042FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AAFCFCB253AF879009042FA /* Build configuration list for PBXNativeTarget "HackGT2020UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AAFCFCC253AF879009042FA /* Debug */,
+				5AAFCFCD253AF879009042FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5AAFD08C253C3188009042FA /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5AAFD08D253C3188009042FA /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5AAFD08C253C3188009042FA /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5AAFCF98253AF877009042FA /* Project object */;
+}
